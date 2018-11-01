@@ -1,16 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
-<<<<<<< HEAD
- //// this is a test for GITHUB
+// 2nd test 
 
-=======
->>>>>>> c4368203950b992bfb3ec27ba129a43f98862cc4
 @Component({
   selector: 'app-test',
   template: `
     <div *ngFor="let employee of employees">
       <h2>{{employee.id}} {{employee.name}}  {{employee.age}}</h2>
     </div>
+	<h2>We have to add git plug to VSC</h2>
 
 
 
