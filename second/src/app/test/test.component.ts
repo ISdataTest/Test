@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-// 2nd test 
+// git plug Test
 
 @Component({
   selector: 'app-test',
