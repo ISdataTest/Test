@@ -1,3 +1,24 @@
+<script type="text/javascript">
+  var datefield=document.createElement("input")
+  datefield.setAttribute("type", "date")
+  if (datefield.type!="date"){ //if browser doesn't support input type="date", load files for jQuery UI Date Picker
+      document.write('<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />\n')
+      document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"><\/script>\n')
+      document.write('<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"><\/script>\n') 
+  }
+</script>
+
+<script>
+if (datefield.type!="date"){ //if browser doesn't support input type="date", initialize date picker widget:
+  jQuery(function($){ //on document.ready
+      $('#birthday').datepicker();
+  })
+}
+</script>
+
+
+
+
 <div class="content" style="background-color:#003868;">
   <img class="content" src="http://138.197.123.65/shawi/Pictures/Logo.png" alt="Ville Shawinigan" width="150" height="100" style="background-color:#dce0e8;">
   
@@ -43,8 +64,13 @@
       <input type="text" id="prioriteService" class="form-control" placeholder="Priorité de service">
       <br>
       <label for="dateEcheance">Date d'échéance : </label>
-      <input type="date" id="dateEcheance" class="form-control" placeholder="Date d'échéance">
+      <input type="date" id="dateEcheance" class="form-control" placeholder="Date d'échéance" name="dateEcheance">
       <br>
+      <form>
+        <b>Date of birth:</b>
+        <input type="date" id="birthday" name="birthday" size="20" />
+        <input type="button" value="Submit" name="B1"></p>
+      </form>
       <label for="dateEcheanceRevisee">Date d'échéance révisée : </label>
       <input type="date" id="dateEcheanceRevisee" class="form-control" placeholder="Date d'échéance révisée">
       <br>
@@ -128,3 +154,5 @@
     </div>
   </form>
 </div>
+
+-->
